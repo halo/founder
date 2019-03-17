@@ -40,7 +40,7 @@ That's what Founder intends to do for you **under the hood**:
 
 1. Once Bundler is available, we use `Bundler::CLI` to process your `Gemfile` and download all relevant gems.
 
-1. Usiung `Bundler.setup` these gems will be added to your `$LOAD_PATH`.
+1. Using `Bundler.setup` these gems will be added to your `$LOAD_PATH`.
 
 
 ## Requirements
@@ -51,8 +51,8 @@ But if you target a wider audience, you should use a Ruby interpreter that exist
 
 You won't have a cutting edge version, but most likely
 
-* `2.3.7p456` on [macOS](https://apple.stackexchange.com/a/257629) 
-* `2.3.3p222` on [Debian](https://packages.debian.org/stretch/ruby) 
+* `2.3.7p456` on [macOS](https://apple.stackexchange.com/a/257629)
+* `2.3.3p222` on [Debian](https://packages.debian.org/stretch/ruby)
 * at least the same on [Ubuntu](https://askubuntu.com/questions/918838/which-ruby-version-is-included-in-ubuntu-16-04).
 
 That should be good enough for most use cases. Founder itself is tested on Ruby `2.3.3`.
@@ -91,19 +91,19 @@ Founder.configure do |config|
   # The full path to the Gemfile (and Gemfile.lock).
   # Defaults to `../vendor/Gemfile` relative to `founder.rb` like so:
   config.gemfile_path = ::File.expand_path('../vendor/Gemfile', __dir__)
-  
+
   # Where all gems will be installed to.
   # Defaults to `../vendor` relative to `founder.rb` like so:
-  config.download_path = config.gemfile_path.parent  
-  
+  config.download_path = config.gemfile_path.parent
+
   # Which version of Bundler to download.
   # Defaults to something recent.
   config.bundler_version = '2.0.1'
-  
+
   # Whether or not to show extra logging output.
   # Defaults to true if `--debug` or DEBUG=1 is provided.
   config.debug = ARGV.dup.delete('--debug') || ENV['DEBUG']
-  
+
   # Which logger to use.
   # Defaults to `/dev/null`.
   # Defaults to `STDOUT` if `config.debug` is true.
@@ -117,7 +117,7 @@ You can use `Founder.download` to only download bundler and the specified gems. 
 
 ## The future
 
-Eventually RubyGems and Bundler [will become one](https://github.com/rubygems/rubygems/issues/1681) and recent versions of Ruby [already include Bundler](https://bugs.ruby-lang.org/issues/12733). That will make things a lot easier, but until then, it's useful to resort to Founder. 
+Eventually RubyGems and Bundler [will become one](https://github.com/rubygems/rubygems/issues/1681) and recent versions of Ruby [already include Bundler](https://bugs.ruby-lang.org/issues/12733). That will make things a lot easier, but until then, it's useful to resort to Founder.
 
 ## License
 
