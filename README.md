@@ -1,3 +1,6 @@
+![](https://img.shields.io/circleci/project/github/halo/founder/master.svg)
+![](https://img.shields.io/github/license/halo/founder.svg?color=blue)
+
 ## TL; DR
 
 `gem install bundler` is much to ask for on freshly set up operating system or from an unexperienced user. Founder will *on-the-fly* download and run bundler so that your code gets all dependencies it needs.
