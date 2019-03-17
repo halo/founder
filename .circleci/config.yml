@@ -1,0 +1,7 @@
+version: 2
+jobs:
+  build:
+    steps:
+      - run:
+          name: run tests
+          command: rake
