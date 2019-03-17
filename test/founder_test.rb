@@ -4,7 +4,7 @@ require 'founder'
 describe Founder do
   describe '.version' do
     it 'is the current Founder version' do
-      value(Founder.version).must_equal '0.0.1'
+      value(Founder.version).must_equal '0.0.2'
     end
   end
 

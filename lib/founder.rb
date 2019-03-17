@@ -104,10 +104,10 @@ module Founder
       result
     end
 
-    # In the future `--no-documentation` should be used.
-    # But it is not recognized by the ruby version we currently support.
+    # Either `--no-ri --no-rdoc` or `--no-documentation` should also be used.
+    # But that may lead to errors depending on the RubyGems version.
     def options
-      %W[bundler --no-ri --no-rdoc --version #{config.bundler_version} --install-dir #{config.gems_path}]
+      %W[bundler --version #{config.bundler_version} --install-dir #{config.gems_path}]
     end
 
     def config
@@ -185,7 +185,7 @@ end
 module Founder
   # To identify later which code version you copy-and-pasted.
   def self.version
-    '0.0.1'
+    '0.0.2'
   end
 
   def self.install
