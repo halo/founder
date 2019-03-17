@@ -1,7 +1,8 @@
 version: 2
 jobs:
   build:
-    steps:
+    docker:
+      - image: :circleci/ruby:2.3.0
       - run:
           name: run tests
           command: rake

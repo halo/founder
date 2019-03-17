@@ -16,6 +16,8 @@ Founder was created for the following use case:
 
 In other words, you want to create an out-of-the-box experience running your tool (for non-Rubyist and on pristine operating systems).
 
+Good examples are running chef, dotfiles or similar bootstrapping kind of scripts on unprepared machines.
+
 ## The Problem
 
 When someone wants to use your code, they'd first have to run `gem install bundler` and `bundle install`.
