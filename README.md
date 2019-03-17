@@ -1,5 +1,7 @@
+![](https://img.shields.io/github/tag/halo/founder.svg)
 ![](https://img.shields.io/circleci/project/github/halo/founder/master.svg)
 ![](https://img.shields.io/github/license/halo/founder.svg?color=blue)
+![](https://img.shields.io/gitter/room/halo/founder.svg)
 
 ## TL; DR
 
