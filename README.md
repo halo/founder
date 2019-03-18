@@ -1,7 +1,7 @@
-![](https://img.shields.io/github/tag/halo/founder.svg)
-![](https://img.shields.io/circleci/project/github/halo/founder/master.svg)
+![](https://img.shields.io/github/tag-date/halo/founder.svg?label=version)
+[![Circle CI](https://img.shields.io/circleci/project/github/halo/founder/master.svg)](https://circleci.com/gh/halo/founder)
 ![](https://img.shields.io/github/license/halo/founder.svg?color=blue)
-![](https://img.shields.io/gitter/room/halo/founder.svg)
+[![Gitter](https://badges.gitter.im/halo/founder.svg)](https://gitter.im/halo/founder)
 
 ## TL; DR
 
