@@ -140,7 +140,7 @@ module Founder
 
     def load_bundler
       logger.debug { "Adding bundler to $LOAD_PATH from `#{config.bundler_lib_path}`" }
-      $LOAD_PATH << config.bundler_lib_path.to_s
+      $LOAD_PATH.unshift config.bundler_lib_path.to_s
       require 'bundler/cli'
       require 'bundler/cli/install'
       logger.debug { 'Bundler is now loaded.' }
